@@ -11,6 +11,26 @@
 <p>hi</p>
 
 <img src="https://www.kindpng.com/picc/m/331-3318857_coconut-clipart-coconut-oil-coconut-cartoon-png-clipart.png" alt="woah">
-       
-       </body>
-    </html>
+    
+    <script src="Tone.js"></script>
+    <script type = "text/javascript">
+         
+        var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        // create Oscillator node
+        var oscillator = audioCtx.createOscillator();
+        oscillator.connect(audioCtx.destination);
+
+        oscillator.start();
+
+        oscillator.stop(audioCtx.currentTime + 2); //
+       //var now = audioCtx.currentTime();
+
+      //oscillator.type = 'square';
+      //oscillator.frequency.value = 220;
+      //oscillator.gain.value = 0.7;
+
+      
+    </script>
+  </body>
+</html>
